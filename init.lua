@@ -13,6 +13,7 @@ minetest.register_node("spleef_arena:spleef_block_component", {
 	sunlight_propogates = false,
 	walkable = true,
 	tiles = {"spleef_arena_component.png"},
+	sounds = default.node_sound_glass_defaults(),
 	groups = {spleef=2}
 	})
 
@@ -25,6 +26,7 @@ minetest.register_node("spleef_arena:spleef_block_dirt", {
 	walkable = true,
 	tiles = {"spleef_arena_dirt.png"},
 	light_source = 2,
+	sounds = default.node_sound_glass_defaults(),
 	groups = {spleef=3}
 	})
 
@@ -37,6 +39,7 @@ minetest.register_node("spleef_arena:spleef_block_glass", {
 	walkable = true,
 	tiles = {"spleef_arena_glass.png"},
 	light_source = 2,
+	sounds = default.node_sound_glass_defaults(),
 	groups = {spleef=3}
 	})
 
@@ -49,6 +52,7 @@ minetest.register_node("spleef_arena:spleef_block_desert_sand", {
 	walkable = true,
 	tiles = {"spleef_arena_desert_sand.png"},
 	light_source = 2,
+	sounds = default.node_sound_glass_defaults(),
 	groups = {spleef=3}
 	})
 
@@ -61,6 +65,7 @@ minetest.register_node("spleef_arena:spleef_block_desert_sand", {
 	walkable = true,
 	tiles = {"spleef_arena_gravel.png"},
 	light_source = 2,
+	sounds = default.node_sound_glass_defaults(),
 	groups = {spleef=3}
 	})
 
@@ -73,6 +78,7 @@ minetest.register_node("spleef_arena:spleef_block_sand", {
 	walkable = true,
 	tiles = {"spleef_arena_sand.png"},
 	light_source = 2,
+	sounds = default.node_sound_glass_defaults(),
 	groups = {spleef=3}
 	})
 
@@ -85,6 +91,7 @@ minetest.register_node("spleef_arena:spleef_block_leaves", {
 	walkable = true,
 	tiles = {"spleef_arena_leaves.png"},
 	light_source = 2,
+	sounds = default.node_sound_glass_defaults(),
 	groups = {spleef=3}
 	})
 
@@ -99,9 +106,9 @@ minetest.register_tool("spleef_arena:spleef_stick", {
 	stack_max = 1,
 	tool_capabilities = {
 		full_punch_interval = 1.0,
-		max_drop_level=1,
+		max_drop_level=0,
 		groupcaps={
-				spleef={times={[1]=2.0, [2]=1.0, [3]=.1}, maxwear=0.05, maxlevel=1}
+				spleef={times={[1]=2.0, [2]=1.0, [3]=.01}, maxwear=0.05, maxlevel=1}
 			}
 		}
 	})
